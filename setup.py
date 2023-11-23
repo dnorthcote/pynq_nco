@@ -58,11 +58,11 @@ class package_installer():
               description=self.description)
 
 package_installer(name = "pynq_nco",
-                  version = "1.1.0",
+                  version = "1.2.0",
                   description  = "PYNQ NCO Example @ StrathSDR.",
                   author = "David Northcote",
                   email = "david.northcote@strath.ac.uk",
                   license = "",
                   url = "https://github.com/strath-sdr/pynq_nco.git",
-                  pynq_version = "pynq>=2.7",
+                  pynq_version = "pynq==3.0.1",
                   board = os.environ['BOARD'])
