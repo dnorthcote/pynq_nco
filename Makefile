@@ -16,4 +16,5 @@ zcu208:
 	$(MAKE) -C boards/ZCU208/pynq_nco/
 
 tarball:
-	tar -czvf pynq_nco.tar.gz .
+	mkdir outputs
+	tar -czvf outputs/pynq_nco.tar.gz --exclude=./outputs .
