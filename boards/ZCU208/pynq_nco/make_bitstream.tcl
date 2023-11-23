@@ -15,7 +15,7 @@ update_compile_order -fileset sources_1
 set_property strategy Performance_ExplorePostRoutePhysOpt [get_runs impl_1]
 
 # Call implement
-launch_runs impl_1 -to_step write_bitstream -jobs 12
+launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
 
 # Move and rename bitstream to final location
